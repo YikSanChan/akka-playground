@@ -4,7 +4,7 @@ import akka.actor.typed.scaladsl.Behaviors
 import akka.actor.typed.{ActorRef, ActorSystem, Behavior}
 
 object Main extends App {
-  val system = ActorSystem(akkaactors.HelloWorldMain(), "hello-world")
+  val system = ActorSystem(HelloWorldMain(), "hello-world")
   system ! akkaactors.HelloWorldMain.SayHello("Akka")
 }
 
